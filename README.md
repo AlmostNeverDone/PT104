@@ -34,7 +34,7 @@ The project highlights both offensive and defensive perspectives, showing how at
   使用 Steghide 進行資料嵌入與提取
 
 * Analyze file characteristics (e.g., size differences) to detect hidden data.<br/>
-  透過檔案特徵（如大小差異）判斷是否存在隱藏資料。
+  透過檔案特徵（如大小差異）判斷是否存在隱藏資料
 
 * Develop awareness of steganography in real-world cyber threats.<br/>
   建立對隱寫術在實際資安威脅中的認知
