@@ -21,21 +21,23 @@ The project highlights both offensive and defensive perspectives, showing how at
 <h2>Key Learning Outcomes 主要學習成果</h2>
 
 
-* Understand how EXE wrapping works and how multiple programs can be embedded into a single executable.<br/>
-  理解 EXE 封裝機制，以及如何將多個程式整合為單一執行檔。
+* Understand the concept and purpose of steganography.<br/>
+  理解隱寫術的概念與應用目的
   
-* Learn how to configure execution behavior (visible vs hidden, synchronous vs asynchronous).<br/>
-  學習設定程式執行方式 (可見/隱藏、同步/非同步)。
+* Differentiate between steganography and cryptography.<br/>
+  能區分隱寫術與密碼學的差異
   
-* Demonstrate how legitimate programs can be abused to simulate Trojan-like behavior.<br/>
-  示範如何利用合法程式模擬木馬行為。
+* Learn how data can be hidden within digital images using LSB techniques.<br/>
+  學習如何利用 LSB 技術將資料隱藏於數位影像中
   
-* Analyze process behavior using Task Manager to identify hidden execution.<br/>
-  使用工作管理員分析程序行為並識別隱藏執行。
+* Perform data embedding and extraction using Steghide.<br/>
+  使用 Steghide 進行資料嵌入與提取
 
-* Understand basic malware delivery concepts through executable packaging.<br/>
-  理解透過可執行檔封裝進行惡意程式傳遞的基本概念。
+* Analyze file characteristics (e.g., size differences) to detect hidden data.<br/>
+  透過檔案特徵（如大小差異）判斷是否存在隱藏資料。
 
+* Develop awareness of steganography in real-world cyber threats.<br/>
+  建立對隱寫術在實際資安威脅中的認知
 
 
 ---------
@@ -45,15 +47,14 @@ The project highlights both offensive and defensive perspectives, showing how at
 <div align="center">
 </p>
 
-| Category 分類                  | Tools / Concepts 工具 / 概念                                 |
-| ---------------------------- | -------------------------------------------------------- |
-| Malware Simulation <br/>惡意程式模擬    | eLiTeWrap EXE wrapper                                    |
-| Execution Control  <br/>執行控制        | Visible vs hidden execution, synchronous vs asynchronous <br/>可見執行與隱藏執行，同步執行與非同步執行 |
-| Windows Internals Windows <br/>系統    | Process execution, background processes <br/>進程執行、後台程式                                       |
-| System Monitoring <br/>系統監控        | Task Manager process analysis <br/>工作管理員流程分析                                                 |
-| File Packaging <br/>檔案封裝           | Executable bundling, payload execution <br/>可執行檔案捆綁、有效載荷執行                               |
-| Security Evasion <br/>檢測繞過         | Antivirus exclusion configuration <br/>防毒軟體排除配置                                               |
-| Attack Concept <br/>攻擊概念           | Trojan behavior simulation <br/>木馬行為模擬                                                         |
+| Category 分類                 | Tools / Concepts 工具 / 概念                                               |
+| --------------------------- | --------------------------------------------------------------------------- |
+| Data Concealment <br/>資料隱匿  | Steganography, LSB technique <br/>隱寫術、最低有效位                      |
+| File Analysis <br/>檔案分析     | File size comparison, metadata inspection <br/>檔案大小比較、中繼資料分析 |
+| Forensics <br/>數位取證         | Data extraction, hidden content recovery <br/>資料提取、隱藏內容還原      |
+| Tools <br/>工具               | Steghide, diffchecker                                                    |
+| Security Concepts <br/>資安概念 | Data obfuscation, covert communication <br/>資料混淆、隱密通訊           |
+
 
 
 </div>
@@ -67,16 +68,19 @@ The project highlights both offensive and defensive perspectives, showing how at
 <h2>Materials and Methods 材料與方法</h2>
 
 [Environment]
-* Windows 10 (VM)</b>
+* Hyper-V virtualization platform (虛擬化平台)</b>
+* Kali Linux virtual machine (Kali OS 虛擬機)</b>
 
 
 
 [Tasks]
-* Download and Verify eLiTeWrap (下載並驗證 eLiTeWrap)</b>
-* Configure Antivirus Exclusions (設定防毒排除規則)</b>
-* Prepare Payload Programs (準備封裝用程式)</b>
-* Create a Wrapped file and Configure Execution Behaviour (建立封裝檔並配置執行行為)</b>
-* Execute the Packed File and Analyse Process Behaviour (執行封裝檔並分析進程行為)</b>
+* Prepare Image and Secret Data File(準備圖片與隱藏資料檔案)</b>
+* Install and Configure Steghide(安裝並設定 Steghide)</b>
+* Embed Hidden Data into Image(將資料嵌入圖片中)</b>
+* Compare Original and Stego Image(比較原始圖片與隱寫圖片)</b>
+* Inspect File Differences and Indicators(檢查檔案差異與可疑指標)</b>
+* Extract Hidden Data from Image(從圖片中提取隱藏資料)</b>
+* Validate Extracted Content(驗證提取資料內容)</b>
 
 
 
