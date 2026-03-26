@@ -177,5 +177,5 @@ Not all threats are visible at the network level—some are hidden within the da
 <h2>Reference 參考</h2>
 
 [UniSQ] [CSC6101 - Penetration Testing](https://handbook-guide.unisq.edu.au/course/2026/CSC6101)<br/>
-[EC-Council] [Certified Ethical Hacker Practical](https://aspen.eccouncil.org/Home)<br/>
+[EC-Council] [Certified Ethical Hacker (Practical)](https://aspen.eccouncil.org/Home)<br/>
 <br/>
