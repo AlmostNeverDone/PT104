@@ -74,13 +74,13 @@ The project highlights both offensive and defensive perspectives, showing how at
 
 
 [Tasks]
-* Prepare Image and Secret Data File(準備圖片與隱藏資料檔案)</b>
-* Install and Configure Steghide(安裝並設定 Steghide)</b>
-* Embed Hidden Data into Image(將資料嵌入圖片中)</b>
-* Compare Original and Stego Image(比較原始圖片與隱寫圖片)</b>
-* Inspect File Differences and Indicators(檢查檔案差異與可疑指標)</b>
-* Extract Hidden Data from Image(從圖片中提取隱藏資料)</b>
-* Validate Extracted Content(驗證提取資料內容)</b>
+* Prepare Image and Secret Data File (準備圖片與隱藏資料檔案)</b>
+* Install and Configure Steghide (安裝並設定 Steghide)</b>
+* Embed Hidden Data into Image (將資料嵌入圖片中)</b>
+* Compare Original and Stego Image (比較原始圖片與隱寫圖片)</b>
+* Inspect File Differences and Indicators (檢查檔案差異與可疑指標)</b>
+* Extract Hidden Data from Image (從圖片中提取隱藏資料)</b>
+* Validate Extracted Content (驗證提取資料內容)</b>
 
 
 
