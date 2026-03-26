@@ -124,55 +124,57 @@ The project highlights both offensive and defensive perspectives, showing how at
 
 <h2>Results 專題結論</h2>
 
-This project demonstrates how executable wrapping techniques can be used to simulate basic Trojan behavior by packaging multiple programs into a single file and controlling their execution.
+This project demonstrates how steganography can be used to conceal and recover data within digital images using the Steghide tool.
 
-本專題展示了如何透過可執行檔封裝技術，將多個程式整合為單一檔案並控制其執行方式，以模擬基本木馬行為。
+本專題展示了如何使用 Steghide 工具，將資料隱藏於數位影像中並成功進行還原。
 
-By embedding legitimate applications and configuring hidden execution, the wrapped file was able to trigger multiple processes, including background execution without direct user visibility.
+By embedding a text file into an image using the LSB technique, we created a stego file that appeared visually identical to the original while containing hidden content. Through file comparison and metadata inspection, we identified subtle indicators such as file size differences that suggested the presence of concealed data.
 
-透過嵌入合法程式並設定隱藏執行，封裝檔成功觸發多個程序，其中包含使用者不可見的背景執行行為。
+透過 LSB 技術將文字檔嵌入圖片中，我們成功建立了一個在視覺上與原圖無差異，但實際包含隱藏資料的隱寫檔案。透過檔案比較與中繼資料分析，我們發現如檔案大小差異等細微跡象，顯示可能存在隱藏資料。
 
-Process analysis using Task Manager revealed abnormal behavior, such as a single executable spawning multiple processes and initiating hidden activities, which aligns with common characteristics of Trojan-based attacks.
+Finally, the hidden data was successfully extracted and validated, confirming the integrity of the steganographic process.
 
-透過工作管理員進行程序分析，觀察到異常行為，例如單一執行檔啟動多個程序並產生隱藏活動，這與典型木馬攻擊特徵一致。
+最終成功提取並驗證隱藏資料，證明隱寫與還原流程的完整性與可行性。
 
-In addition, file integrity verification and hash-based reputation checks were performed prior to execution, reinforcing secure analysis practices and ensuring reliable results.
+This project reinforces the concept that data can be hidden in plain sight and requires specialized techniques for detection and analysis.
 
-此外，在執行前進行檔案完整性驗證與雜湊信譽查詢，強化了安全分析流程並確保分析結果的可靠性。
-
-Overall, this project highlights how simple techniques can replicate real-world malware behavior and emphasizes the importance of process monitoring and behavioral analysis in detecting such threats.
-
-總結而言，本專題展示了簡單技術如何重現真實世界的惡意程式行為，並強調透過程序監控與行為分析來偵測此類威脅的重要性。
+本專題強化了一項關鍵概念：資料可以隱藏於表面可見的媒介中，且需透過特定技術才能偵測與分析。
 
 
 ---------
 
 <h2>Security Insight 安全洞察</h2>
 
-This project highlights the importance of verifying file integrity and assessing potential threats before execution, especially when dealing with externally sourced files.
+This project highlights a critical but often overlooked threat vector: data can be covertly embedded within benign-looking files, bypassing traditional security controls.
 
-本專題強調在執行外部來源檔案前，進行完整性驗證與潛在威脅評估的重要性。
+本專題揭示一項常被忽略的威脅途徑：資料可被隱藏於看似正常的檔案中，進而繞過傳統安全機制。
 
-By validating the SHA256 hash against a trusted source and cross-checking it with threat intelligence platforms such as VirusTotal, we ensured that the file had not been tampered with and did not match known malicious signatures.
+Unlike encrypted traffic or obvious malware, steganography operates at the data level, making it significantly harder to detect using standard network or signature-based defenses.
 
-透過比對 SHA256 雜湊值與可信來源，並進一步利用 VirusTotal 等威脅情報平台進行交叉驗證，我們確認該檔案未被竄改，且未匹配已知惡意樣本。
+與加密流量或明顯惡意程式不同，隱寫術運作於資料層，使其難以被傳統的網路監控或特徵碼偵測機制發現。
 
-This demonstrates a critical security practice: hash-based validation serves as the first line of defense against supply chain attacks and malicious file distribution.
+From an attacker’s perspective, steganography can be used for covert communication, data exfiltration, or payload delivery without raising immediate suspicion.
 
-這展示了一項關鍵資安實務：基於雜湊值的驗證是防禦供應鏈攻擊與惡意檔案散佈的第一道防線。
+從攻擊者角度來看，隱寫術可用於隱密通訊、資料外洩或惡意載荷傳遞，且不易引起注意。
 
-Additionally, the workflow reinforces that static verification alone is not sufficient. Combining hash validation with reputation-based intelligence platforms improves confidence in file safety and reduces the risk of executing compromised binaries.
+From a defensive standpoint, this reinforces the need for deeper file inspection, anomaly detection, and contextual analysis, rather than relying solely on surface-level indicators.
 
-此外，本流程也強調僅依賴靜態驗證是不足的。結合雜湊驗證與信譽型威脅情報平台，能有效提升檔案安全性的判斷準確度，降低執行惡意程式的風險。
+從防禦角度而言，這強調了進階檔案檢測、異常行為分析與情境判斷的重要性，而非僅依賴表面特徵。
 
-From a defensive perspective, this approach aligns with secure software handling practices, where every external artifact must be validated before being trusted within an environment.
+This project also demonstrates that minor inconsistencies, such as unexpected file size differences, can serve as early indicators of hidden data.
 
-從防禦角度來看，此方法符合安全軟體處理原則，即所有外部取得的檔案在被信任與使用前，都應進行驗證。
+此外，本專題也顯示細微異常（如檔案大小差異）可作為隱藏資料的初步指標。
+
+Overall, this reinforces a key defensive principle:
+Not all threats are visible at the network level—some are hidden within the data itself.
+
+總結而言，本專題強化了一項核心防禦觀念：
+威脅不一定存在於網路層，有些是隱藏於資料本身之中。
 
 ---------
 
 <h2>Reference 參考</h2>
 
 [UniSQ] [CSC6101 - Penetration Testing](https://handbook-guide.unisq.edu.au/course/2026/CSC6101)<br/>
-[TryHackMe] [Cyber Kill Chain](https://tryhackme.com/room/cyberkillchainzmt)<br/>
+[EC-Council] [Certified Ethical Hacker Practical](https://aspen.eccouncil.org/Home)<br/>
 <br/>
