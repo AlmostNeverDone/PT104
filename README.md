@@ -91,33 +91,34 @@ The project highlights both offensive and defensive perspectives, showing how at
 <h2>Practice 實踐</h2>
 
 <p align="center">
-<b>Task 1-1: Download File and Verify Integrity Using SHA256<br/> (下載檔案並使用 SHA256 驗證其完整性)</b><br/>
-<img src="https://i.imgur.com/PIIR09U.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 1: Prepare Image and Secret Data File<br/> (準備圖片與隱藏資料檔案)</b><br/>
+<img src="https://i.imgur.com/kJJ4a7t.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 1-2: Verify File Reputation via VirusTotal<br/> (使用 VirusTotal 驗證檔案信譽)</b><br/>
-<img src="https://i.imgur.com/X2BmHGi.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* This step extends the analysis from integrity validation to threat intelligence correlation, providing additional context for risk assessment. <br/>此步驟將分析從完整性驗證延伸至威脅情報關聯，提供額外的風險評估依據 <br/>
+<b>Task 2: Install and Configure Steghide<br/> (安裝並設定 Steghide)</b><br/>
+<img src="https://i.imgur.com/bx09NnK.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 2: Configure Antivirus Exclusion<br/> (設定防毒排除)</b><br/>
-<img src="https://i.imgur.com/14KHT7X.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 3: Embed Hidden Data into Image<br/> (將資料嵌入圖片中)</b><br/>
+<img src="https://i.imgur.com/3StX54O.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 3: Prepare Payload Programs<br/> (準備封裝程式)</b><br/>
-<img src="https://i.imgur.com/JrwDMX5.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 4: Compare Original and Stego Image<br/> (比較原始圖片與隱寫圖片)</b><br/>
+<img src="https://i.imgur.com/504PWnE.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 4: Create a Wrapped file and Configure Execution Behaviour<br/> (建立封裝檔並配置執行行為)</b><br/>
-<img src="https://i.imgur.com/6qsorSJ.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 5: Inspect File Differences and Indicators<br/> (檢查檔案差異與可疑指標)</b><br/>
+<img src="https://i.imgur.com/5V8Z7Vq.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Task 5: Execute the Packed File and Analyse Process Behaviour<br/> (執行封裝檔並分析進程行為)</b><br/>
-<img src="https://i.imgur.com/lD3r5lY.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 6: Extract Hidden Data from Image<br/> (從圖片中提取隱藏資料)</b><br/>
+<img src="https://i.imgur.com/ULp3vGp.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-
+<b>Task 7: Validate Extracted Content<br/> (驗證提取資料內容)</b><br/>
+<img src="https://i.imgur.com/taPH0DY.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
 
 ---------
